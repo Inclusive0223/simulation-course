@@ -175,7 +175,7 @@ class TrajectoryGUI:
         """Сохранение таблицы в CSV файл"""
         if hasattr(self, 'current_df'):
             try:
-                filename = "trajectory_results.csv"
+                filename = "/Users/dildorabikmurzina/Desktop/simulation-course/lab01/trajectory_results.csv"
                 self.current_df.to_csv(filename, index=False, encoding='utf-8')
                 messagebox.showinfo("Успех", f"Таблица сохранена в файл: {filename}")
             except Exception as e:
